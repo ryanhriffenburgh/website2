@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ryan Riffenburgh</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 140vh;
+      background: #f4f1ea;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      color: #111;
+    }
+
+  img {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: auto;
+
+    transform: scaleY(.42);
+    transform-origin: top left;
+}
+#bg-video {
+    position: fixed;
+
+    left: 55vw;
+    top: -5vh;
+
+    height: 120vh;
+    width: auto;
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+.side-image {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    height: 100vh;
+    width: auto;
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+.video {
+    position: fixed;
+
+    left: px;
+    bottom: 40px;
+
+    width: 390px;
+
+    transform: rotate(-0.6deg);
+
+    z-index: 20;
+}
+
+iframe {
+    width:100%;
+    height:100%;
+    border:0;
+}
+    main {
+      position: relative;
+      z-index: 2;
+      padding: 24px;
+    }
+
+   h1 {
+    font-family: "Arial", Arial, sans-serif;
+
+    font-size: clamp(4rem, 11vw, 10rem);
+
+    font-weight: 100;
+
+    color: black;
+
+    margin: 0;
+
+    line-height: .82;
+
+    letter-spacing: -.08em;
+
+    text-transform: uppercase;
+}
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      width: fit-content;
+      margin-bottom: 9px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .links {
+      margin-left: 4vw;
+      margin-top: 20vh;
+      font-size: 15px;
+    }
+
+    .note {
+      position: absolute;
+      top: 92vh;
+      left: 62vw;
+      max-width: 220px;
+      line-height: 1.35;
+    }
+
+    .youtube {
+      position: absolute;
+      top: 118vh;
+      left: 8vw;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <img src="background.jpeg" alt="">
+
+
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="background.mp4" type="video/mp4">
+</video>
+<img class="side-image" src="side-image.jpeg" alt="">
+  <main>
+    <h1>Ryan Riffenburgh</h1>
+
+    <div class="links">
+      <a href="https://open.spotify.com/artist/2ED1F4XHIFPmnii59M1lIF">spotify</a>
+      <a href="https://music.apple.com/us/artist/ryan-riffenburgh/6779011649">apple music</a>
+      <a href="writing.html">writing</a>
+      <a href="mailto:ryanhriffenburgh@gmail.com">contact</a>
+    </div>
+
+
+    <div class="video">
+    <iframe
+  src="https://www.youtube.com/embed/JznjfELK8iw"
+  title="YouTube video"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen>
+</iframe>
+</div>
+
+    <div class="youtube">
+      <a href="https://www.youtube.com/watch?v=JznjfELK8iw">JznjfELK8iw</a>
+    </div>
+  </main>
+</body>
+</html>
